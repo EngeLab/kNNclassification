@@ -53,6 +53,7 @@
 #' @importFrom tidygraph as_tibble
 
 kNNclassify <- function(cpm, geneIdx, PCiter, k, pca = NULL, quietly = TRUE) {
+  name <- NULL
   if(is.null(pca)) {
     pca <- gmodels::fast.prcomp(t(cpm[geneIdx, ]), scale. = TRUE)$x
   }
@@ -81,8 +82,10 @@ kNNclassify <- function(cpm, geneIdx, PCiter, k, pca = NULL, quietly = TRUE) {
 #' retain.
 #' @importFrom tidyr gather
 #' @importFrom dplyr mutate "%>%"
+#' @importFrom stats dist
 
 distInPCAspace <- function(pca, pcs) {
+  to <- from <- NULL
   pca[, 1:pcs] %>%
     dist() %>%
     as.matrix() %>%
@@ -111,6 +114,7 @@ distInPCAspace <- function(pca, pcs) {
 #' @importFrom purrr map2_chr
 
 getKNN <- function(pca, pcs, k) {
+  from <- to <- cmb <- NULL
   near_data <- FNN::get.knn(pca[, 1:pcs], k = k)
   index <- near_data$nn.index
   rownames(index) <- rownames(pca)
@@ -143,6 +147,7 @@ getKNN <- function(pca, pcs, k) {
 #' @importFrom dplyr mutate "%>%"
 
 constructGraph <- function(data) {
+  edges <- from <- to <- nodes <- NULL
   igraph::graph_from_data_frame(data, directed = FALSE) %>%
     tidygraph::as_tbl_graph() %>%
     tidygraph::activate(edges) %>%

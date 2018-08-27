@@ -1,25 +1,26 @@
 Package: kNNclassification
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com")
+Title: Unsupervised classification via k-Nearest-Neighbors and graph-based Louvain community detection
+Version: 0.1.0
+Authors@R: person("Jason T.", "Serviss", email = "Jason.serviss@ki.se", role = c("aut", "cre"), comment = c(ORCID = 0000-0002-5778-7014))
+Author: Jason T. Serviss [aut, cre]
 Description: What the package does (one paragraph).
-License: What license it uses
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
+Depends: R (>= 3.5.0)
 Imports: 
-    gmodels,
-    paran,
-    dplyr,
-    tidyr,
-    purrr,
-    stringr,
-    igraph,
-    tidygraph,
-    FNN
+  gmodels,
+  paran,
+  dplyr,
+  tidyr,
+  purrr,
+  stringr,
+  igraph,
+  tidygraph,
+  FNN,
+  readr,
+  rlang,
+  tibble
 RoxygenNote: 6.1.0
 Suggests: 
     testthat

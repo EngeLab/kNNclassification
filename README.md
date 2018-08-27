@@ -70,5 +70,4 @@ kc <- kNNclassify(cpm, 1:nrow(c), 20, 15, pca = pca)
 pData <- merge(kc, matrix_to_tibble(pca[, 1:2], "sample"))
 plot(pData$PC1, pData$PC2, col = rainbow(4)[pData$louvain], pch = 16, xlab = "PC1", ylab = "PC2")
 ```
-
-<img src="README_files/figure-gfm/unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
+<img src="inst/README_files//figure-gfm/unnamed-chunk-2-1.png" style="display: block; margin: auto;"  />
