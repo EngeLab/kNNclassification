@@ -44,7 +44,7 @@ algorithm using the following commands:
 
 ``` r
 library(kNNclassification)
-
+ 
 #setup input data
 s <- stringr::str_detect(colnames(testCounts), "^s")
 e <- stringr::str_detect(rownames(testCounts), "^ERCC\\-[0-9]*$")
