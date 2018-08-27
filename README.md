@@ -1,14 +1,11 @@
 knnClassification
 ================
 
-Release build:
-<a href="https://travis-ci.org/jasonserviss/sp.scRNAseq"><img src="https://travis-ci.com/jasonserviss/sp.scRNAseq.svg?token=8VXNvJpmRV9RpFtTcJYW&branch=master"></a>
+Build:
+<a href="https://travis-ci.org/jasonserviss/sp.scRNAseq"><img src="https://travis-ci.org/EngeLab/kNNclassification.svg?branch=master"></a>
 
-Devel build:
-<a href="https://travis-ci.org/jasonserviss/sp.scRNAseq"><img src="https://travis-ci.com/jasonserviss/sp.scRNAseq.svg?token=8VXNvJpmRV9RpFtTcJYW&branch=devel"></a>
-
-Test coverage: [![Coverage
-status](https://codecov.io/gh/jasonserviss/sp.scRNAseq/branch/master/graph/badge.svg)](https://codecov.io/github/jasonserviss/sp.scRNAseq?branch=master)
+Test coverage:
+[![codecov](https://codecov.io/gh/EngeLab/knnClassification/branch/master/graph/badge.svg)](https://codecov.io/gh/EngeLab/knnClassification)
 
 ### Description
 
@@ -68,6 +65,10 @@ kc <- kNNclassify(cpm, 1:nrow(c), 20, 15, pca = pca)
 ``` r
 #plot
 pData <- merge(kc, matrix_to_tibble(pca[, 1:2], "sample"))
-plot(pData$PC1, pData$PC2, col = rainbow(4)[pData$louvain], pch = 16, xlab = "PC1", ylab = "PC2")
+plot(
+  pData$PC1, pData$PC2, col = rainbow(4)[pData$louvain], pch = 16, 
+  xlab = "PC1", ylab = "PC2"
+)
 ```
-<img src="inst/README_files//figure-gfm/unnamed-chunk-2-1.png" style="display: block; margin: auto;"  />
+
+<img src="README_files/figure-gfm/unnamed-chunk-2-1.png" style="display: block; margin: auto;" />

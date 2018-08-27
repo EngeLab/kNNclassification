@@ -5,7 +5,7 @@ output: github_document
 
 Build: <a href="https://travis-ci.org/jasonserviss/sp.scRNAseq"><img src="https://travis-ci.org/EngeLab/kNNclassification.svg?branch=master"></a>
 
-Test coverage: [![Coverage status](https://codecov.io/gh/jasonserviss/sp.scRNAseq/branch/master/graph/badge.svg)](https://codecov.io/github/jasonserviss/sp.scRNAseq?branch=master)
+Test coverage: [![codecov](https://codecov.io/gh/EngeLab/knnClassification/branch/master/graph/badge.svg)](https://codecov.io/gh/EngeLab/knnClassification)
 
 ### Description
 
