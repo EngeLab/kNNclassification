@@ -3,6 +3,12 @@ title: "knnClassification"
 output: github_document
 ---
 
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  fig.path = "inst/README_files/README-"
+)
+```
+
 Build: <a href="https://travis-ci.org/jasonserviss/sp.scRNAseq"><img src="https://travis-ci.org/EngeLab/kNNclassification.svg?branch=master"></a>
 
 Test coverage: [![codecov](https://codecov.io/gh/EngeLab/knnClassification/branch/master/graph/badge.svg)](https://codecov.io/gh/EngeLab/knnClassification)
