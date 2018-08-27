@@ -1,0 +1,8 @@
+inst/doc
+.Rproj
+*.history
+.Rhistory
+.DS_Store
+.Rproj.user
+.Rproj.user/**
+.Rproj/*
