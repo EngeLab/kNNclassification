@@ -9,7 +9,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-Build: <a href="https://travis-ci.org/jasonserviss/sp.scRNAseq"><img src="https://travis-ci.org/EngeLab/kNNclassification.svg?branch=master"></a>
+Build: <a href="https://travis-ci.org/EngeLab/sp.scRNAseq"><img src="https://travis-ci.org/EngeLab/kNNclassification.svg?branch=master"></a>
 
 Test coverage: [![codecov](https://codecov.io/gh/EngeLab/knnClassification/branch/master/graph/badge.svg)](https://codecov.io/gh/EngeLab/knnClassification)
 
